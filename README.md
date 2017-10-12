@@ -1,24 +1,29 @@
-# README
+# Setup
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. Clone the app
+```
+git clone https://github.com/gohdaniel15/validations-error-handling.git
+```
 
-Things you may want to cover:
+2. Run bundle
+```
+bundle install
+```
 
-* Ruby version
+3. Setup the database
+```
+rake db:create db:migrate
+```
 
-* System dependencies
+# Instructions
 
-* Configuration
+1. This app contains 1 model, `Message`.
 
-* Database creation
+2. Add `null: false` restrictions on the messages table.
 
-* Database initialization
+3. Add presence validations for the `Message` model.
 
-* How to run the test suite
+4. Modify the controller to handle the errors when `#save` fails.
 
-* Services (job queues, cache servers, search engines, etc.)
+5. Modify the view to show the user the errors when `#save` fails.
 
-* Deployment instructions
-
-* ...
