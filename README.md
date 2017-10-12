@@ -5,12 +5,17 @@
 git clone https://github.com/gohdaniel15/validations-error-handling.git
 ```
 
-2. Run bundle
+2. Change directory
+```
+cd validations-error-handling
+```
+
+3. Run bundle
 ```
 bundle install
 ```
 
-3. Setup the database
+4. Setup the database
 ```
 rake db:create db:migrate
 ```
