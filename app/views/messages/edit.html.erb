@@ -1,15 +1,6 @@
 <h1>Editing Message</h1>
 
 <%= form_for @message, url: message_path(@message), method: :put do |form| %>
-  <% if @message.errors.any? %>
-    <div id="error_explanation">
-      <ul>
-      <% @message.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
 
   <div class="field">
     <%= form.label :body %>
